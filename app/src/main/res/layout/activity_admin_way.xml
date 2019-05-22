@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF6F4"
+    android:orientation="vertical"
+    tools:context=".admin_way">
+   <!-- <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">-->
+            <EditText
+                android:id="@+id/admin_way"
+                android:hint="เพิ่มทาง"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/custom_edt2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/save_way"
+                android:background="@drawable/custom_btn2"
+                android:text="บันทึก"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_view_way"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+       <!-- </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>-->
+</LinearLayout>

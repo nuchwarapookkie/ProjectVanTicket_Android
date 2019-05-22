@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+  <android.support.v7.widget.CardView
+      android:id="@+id/card_view_time"
+      android:layout_centerHorizontal="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:clickable="true"
+      >
+     <LinearLayout
+         android:id="@+id/liner_background"
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent">
+         <LinearLayout
+             android:gravity="center"
+             android:orientation="vertical"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:background="#D3E4F1F0">
+             <TextView
+                 android:padding="5dp"
+                 android:text="รถออกเวลา"
+                 android:textSize="15sp"
+                 android:gravity="center"
+                 android:background="#FA2FA8"
+                 android:textColor="@android:color/white"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:padding="5dp"
+                 android:id="@+id/text_time_start"
+                 android:text="เวลาเริ่มต้น"
+                 android:textSize="15sp"
+                 android:gravity="center"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+         </LinearLayout>
+         <View
+             android:layout_weight="0.2"
+             android:layout_width="0dp"
+             android:layout_height="1dp" />
+         <LinearLayout
+             android:gravity="center"
+             android:orientation="vertical"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:background="#DDE3E9E8">
+             <TextView
+                 android:padding="5dp"
+                 android:gravity="center"
+                 android:text="รถออกเวลา"
+                 android:textSize="15sp"
+                 android:background="#E135FF"
+                 android:textColor="@android:color/white"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+             <TextView
+                 android:padding="5dp"
+                 android:gravity="center"
+                 android:id="@+id/text_time_end"
+                 android:text="เวลากลับ"
+                 android:textSize="15sp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />
+         </LinearLayout>
+     </LinearLayout>
+  </android.support.v7.widget.CardView>
+</RelativeLayout>

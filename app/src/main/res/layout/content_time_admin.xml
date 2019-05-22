@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+   <android.support.v7.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:padding="10dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/text_date"
+           android:textSize="18sp"
+           android:text="วัน"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           />
+      <LinearLayout
+          android:layout_marginTop="5dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/time_start_admin_card"
+              android:text="time_end"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:text="  ถึง   "
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:id="@+id/time_end_admin_card"
+              android:text="time_start"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <View
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"/>
+          <ImageView
+              android:id="@+id/img_stack"
+              android:background="@drawable/ic_arrow_drop_down_black_24dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+       </LinearLayout>
+   </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RentSeat">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@drawable/van"
+                android:layout_width="120dp"
+                android:layout_height="80dp" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:background="@drawable/custom_background"
+                android:orientation="vertical"
+                android:layout_width="250dp"
+                android:padding="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/way_car"
+                    android:text="เส้นทาง:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/way_com_car"
+                    android:text="เดินทางจาก:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/way_start_car"
+                    android:text="ออกเดินทาง:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/way_finish_car"
+                    android:text="ถึง:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/car_rent"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s13"
+                        android:layout_marginLeft="62dp"
+                        android:layout_marginTop="62dp"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S13"
+                        android:padding="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s1"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="-9dp"
+                        android:layout_toRightOf="@id/text_s13"
+                        android:layout_below="@+id/text_s13"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S1"
+                        android:padding="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s2"
+                        android:layout_toRightOf="@id/text_s1"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S2"
+                        android:padding="3dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@id/text_s13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s3"
+                        android:layout_toRightOf="@id/text_s2"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S3"
+                        android:padding="3dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@id/text_s13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s4"
+                        android:layout_toLeftOf="@id/text_s2"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S4"
+                        android:padding="3dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_below="@id/text_s1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s5"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S5"
+                        android:padding="3dp"
+                        android:layout_toRightOf="@id/text_s1"
+                        android:layout_below="@id/text_s2"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s6"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S6"
+                        android:padding="3dp"
+                        android:layout_toRightOf="@id/text_s2"
+                        android:layout_below="@id/text_s2"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s7"
+                        android:layout_toLeftOf="@id/text_s2"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S7"
+                        android:padding="3dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_below="@id/text_s5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s8"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S8"
+                        android:padding="3dp"
+                        android:layout_toRightOf="@id/text_s1"
+                        android:layout_below="@id/text_s5"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s9"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S9"
+                        android:padding="3dp"
+                        android:layout_toRightOf="@id/text_s2"
+                        android:layout_below="@id/text_s6"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s10"
+                        android:layout_toLeftOf="@id/text_s2"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S10"
+                        android:padding="3dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_below="@id/text_s7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s11"
+                        android:background="@drawable/custom_background_text"
+                        android:text="    "
+                        android:padding="3dp"
+                        android:layout_toLeftOf="@id/text_s8"
+                        android:layout_below="@id/text_s8"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="-9dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s12"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S11"
+                        android:padding="3dp"
+                        android:layout_toLeftOf="@id/text_s9"
+                        android:layout_below="@id/text_s9"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginRight="-10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/text_s14"
+                        android:background="@drawable/custom_background_text"
+                        android:text="S12"
+                        android:padding="3dp"
+                        android:layout_toRightOf="@id/text_s2"
+                        android:layout_below="@id/text_s9"
+                        android:layout_marginTop="13dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/radio_s1"
+                            android:text="S1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/radio_s10"
+                            android:text="S10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/radio_s2"
+                            android:text="S2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/radio_s11"
+                            android:text="S11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/radio_s3"
+                            android:text="S3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/radio_s12"
+                            android:text="S12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/radio_s4"
+                            android:text="S4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/radio_s13"
+                            android:text="S13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <CheckBox
+                        android:id="@+id/radio_s5"
+                        android:text="S5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/radio_s6"
+                        android:text="S6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/radio_s7"
+                        android:text="S7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/radio_s8"
+                        android:text="S8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/radio_s9"
+                        android:text="S9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+             </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_okey"
+                android:background="@drawable/custom_btn2"
+                android:textSize="25sp"
+                android:text="ตกลง"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

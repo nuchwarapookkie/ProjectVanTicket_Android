@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ticket_name_hone"
+                    android:text="ชื่อ-นามสกุล"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"/>
+                <ImageView
+                    android:id="@+id/stack_card"
+                    android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/ticket_phone_home"
+                android:textSize="18sp"
+                android:text="เบอร์โทรศัพท์"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ticket_seat_home"
+                android:text="เลขที่นั่ง"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ticket_start_home"
+                android:text="เดินทางจาก"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ticket_date_home"
+                android:text="วัน/เดือน/ปี ออกเดินทาง"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ticket_finish_home"
+                android:text="ถึง"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
